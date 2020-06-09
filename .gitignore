@@ -1,0 +1,8 @@
+.DS_Store
+__trash
+
+.venv
+__pycache__
+
+weights/*
+!weights/README.md
