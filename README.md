@@ -1,4 +1,4 @@
-# README
+# Face Matching
 
 This project compares two faces and detects if they are the same person. It is based on the `One-Shot Learning for Face Recognition` technique.
 
@@ -72,7 +72,7 @@ source .venv/bin/activate
 Under the virtual environment, execute the command:
 
 ```bash
-python src/main.py --target './datasets/faces/angelina2.jpg' --source './datasets/faces/angelina.jpg'
+python src/main.py --source './datasets/faces/angelina2.jpg' --target './datasets/faces/angelina.jpg'
 ```
 
 You should get:
@@ -84,7 +84,7 @@ euclidean distance: 117.61527, cosine similarity: 0.2544904947280884, match: Yes
 Then try:
 
 ```bash
-python src/main.py --target './datasets/faces/monica.jpg' --source './datasets/faces/angelina.jpg'
+python src/main.py --source './datasets/faces/monica.jpg' --target './datasets/faces/angelina.jpg'
 ```
 
 You should get:
@@ -96,7 +96,7 @@ euclidean distance: 143.571, cosine similarity: 0.4739534854888916, match: No!
 And finally try:
 
 ```bash
-python src/main.py --target './datasets/faces/joey.jpg' --source './datasets/faces/angelina.jpg'
+python src/main.py --source './datasets/faces/joey.jpg' --target './datasets/faces/angelina.jpg'
 ```
 
 You should get:
